@@ -10,8 +10,9 @@ export class TaskItemComponent implements OnInit {
 
   @Input() task: Task;
 
-  constructor() { }
-
+  constructor(task: Task) { 
+    this.task = task;
+  }
   ngOnInit(): void {
   }
 
